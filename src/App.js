@@ -1,6 +1,10 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"; 
+import { HashRouter as Router, Switch, Route } from "react-router-dom"; 
 import NavigationBar from "./components/NavigationBar.js";
 import './App.css';
+import About from "./components/About.js";
+import Store from "./components/Store.js";
+import FAQ from "./components/FAQ.js";
+import Home from "./components/Home.js";
 
 
 
@@ -11,10 +15,18 @@ function App() {
         <NavigationBar />
 
         <Switch>
-          <Route path="/about">Este es mi about</Route>
-          <Route path="/faq">Este es mi FAQ</Route>
-          <Route path="/store">Este es mi Store</Route>
-          <Route path="/">Este es mi Home</Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/faq">
+            <FAQ />
+          </Route>
+          <Route path="/store">
+            <Store />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     </div>
