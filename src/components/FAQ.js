@@ -1,7 +1,9 @@
 const FAQ = () => {
     return (
-        <div>
-            Este es mi FAQ
+        <div className="card">
+            <div className="card-body">
+                <h4>Este es mi FAQ</h4>
+            </div>
         </div>
     );
 };
